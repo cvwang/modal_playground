@@ -85,7 +85,9 @@ def process_video(url):
 
 @stub.local_entrypoint()
 # def main(youtube_url: str = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"):
-def main(youtube_url: str = "https://www.youtube.com/watch?v=aPNB2h0TnXw"): # Fresh Prince
+# def main(youtube_url: str = "https://www.youtube.com/watch?v=aPNB2h0TnXw"): # Rush Hour 1
+# def main(youtube_url: str = "https://www.youtube.com/watch?v=OAVnOz7i-JA"): # Rush Hour 3
+def main(youtube_url: str = "https://www.youtube.com/watch?v=HQkSMJFJu4g"): # Rush Hour 3
     fn, movie_data = process_video.call(youtube_url)
     abs_fn = os.path.join(OUTPUT_DIR, fn)
     print(f"writing results to {abs_fn}")
